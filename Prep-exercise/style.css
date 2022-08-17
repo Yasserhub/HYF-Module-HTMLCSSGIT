@@ -1,0 +1,49 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: deepskyblue;
+
+}
+
+.container{
+  position: absolute;
+  bottom: 0px;
+  width: 400px;
+  height: 400px;
+  background-color: black;
+  left:50%;
+  transform: translateX(-50%);
+  border-radius: 60px 60px 0 0 ;
+
+}
+
+
+.eye {
+  position: absolute;
+  background-color:white;
+  width:30px;
+  height:30px;
+  top:30%;
+  
+  left:50%;
+
+}
+  
+.arrow-right {
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid yellow;
+    top:30%;    
+    left: 100%;
+  }
+  
