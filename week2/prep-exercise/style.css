@@ -1,0 +1,236 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; 
+    scroll-behavior: smooth; 
+}
+body {
+   font-size: 17px;
+}
+
+img {
+    width: 60%;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 1.7em;
+    margin-top: 2em;
+    text-decoration: underline;
+}
+
+/* Styling the flexbox section*/
+.flexbox-section h2 {
+    font-size: 1.3em; 
+    text-align: center; 
+}
+.flexbox-section h2:before {
+    content: 'Frist:';
+    color: red;
+    font-size: 1.3em;    
+    padding-right: 0.2em;
+}
+.flexbox-section h3 {
+    font-size: 1.2em; 
+    text-align: center; 
+}
+
+.flexbox-section {
+    padding: 1em 2em;
+    margin-bottom: 4em;
+    
+}
+
+.flexbox-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+        
+}
+
+.flexbox-item {
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    flex-basis:22%;
+    min-height: 14em;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    transition: 0.7s ease;
+}
+
+.flexbox-item:hover {
+    transform: scale(1.1);
+ }
+ 
+.flexbox-item:nth-child(1) {
+   flex-basis: 45%;  
+}
+.flexbox-item:nth-child(1) img {
+    width: 50%;  
+    
+ }
+
+.flexbox-item:nth-child(2) {
+    flex-basis:22%;  
+ }
+.flexbox-item:nth-child(3) {
+    flex-basis:22%;  
+ }
+
+.flexbox-item p {
+    font-size: 0.7em;
+}
+
+/* End styling the flexbox section*/
+
+
+/* Styling the grid section*/
+
+.grid-section h2 {
+    font-size: 1.3em; 
+    text-align: center; 
+    padding-bottom: 1em;
+}
+.grid-section h2:before {
+    content: 'Second:';
+    color: red;
+    font-size: 1.3em;    
+    padding-right: 0.2em;
+      
+}
+
+.grid-section h3 {
+    font-size: 1.2em; 
+    text-align: center; 
+}
+
+.grid-section {
+    padding: 1em 2em;
+    margin-bottom: 4em;
+    
+}
+
+.grid-list {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:2em;
+        
+}
+
+.grid-item {
+    padding: 1em;
+    text-align: center;
+    flex-basis:22%;
+    min-height: 14em;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    transition: 0.7s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.1);
+ }
+ 
+ .grid-list .grid-item:nth-child(1) {
+    grid-column: 1 / span 2;
+ }
+
+.grid-item p {
+    font-size: 0.7em;
+}
+
+
+/* End styling the grid section*/
+
+@media (max-width:1024px){
+.flexbox-section {
+    flex-direction: column;    
+    padding: 0.1em 0.2em;
+    margin: 0%;
+
+}
+
+.flexbox-item {
+        padding: 0.5em;
+        margin: 0.5em;
+        width: 10%;
+}  
+
+.flexbox-section h3 {
+    font-size: 0.7em; 
+     
+}
+
+.grid-section {
+    padding: 0.1em 0.2em;
+    margin: 0%;
+
+}
+
+.grid-item {
+        padding: 0.5em;
+        margin: 0.5em;
+}  
+
+.grid-section h3 {
+    font-size: 0.7em; 
+     
+}
+
+}
+
+
+@media  screen and (min-width: 600px) and (max-width: 1024px) {
+    body{
+        font-size: 10px;
+     
+    }
+}
+
+@media (max-width:641px){
+    .flexbox-section {
+        flex-direction: column;    
+        
+        padding: 0.1em 0.2em;
+        margin: 0%;
+    }
+    
+    .flexbox-item {
+            padding: 0.1em;
+            margin: 0.1em;
+            width: 10%;
+    }  
+    
+    .flexbox-section h3 {
+        font-size: 0.2em; 
+         
+    }
+
+    .grid-section {
+        flex-direction: column;    
+        padding: 0.1em 0.2em;
+        margin: 0%;
+    
+    }
+    
+    .grid-item {
+            padding: 0.5em;
+            margin: 0.5em;
+            width: 10%;
+    }  
+    
+    .grid-section h3 {
+        font-size: 0.7em; 
+         
+    }
+}
