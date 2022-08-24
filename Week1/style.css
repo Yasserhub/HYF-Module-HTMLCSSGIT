@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* to apply the following style to all elements and save time */ 
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; 
+}
+
+body , html {
+   font-size: 17px;
+   height: 100%;
+  
+}
+
+section {
+    margin-bottom: 30px;
+}
+  
+/* styling for header including "logo and navigation bar"*/
+header {
+    background-color: #3C7335;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    min-height: 20%; 
+    align-items:center;
+    justify-content: center;
+    
+}
+
+header > div {  
+    flex:1; 
+    text-decoration: none;
+    text-align: center;
+}
+
+header > nav { 
+    flex:2; 
+    text-align: center;
+}
+
+header > div > .logo {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+header li{
+    text-decoration: none;
+    display: inline;
+}
+
+header > nav > ul > li > a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;  
+    padding-left: 0.9em;
+   }
+
+.navigation a:hover{
+    color: #CDCDCD;
+}
+/* End styling for header ------------------------- */
+
+/* styling of my photo */
+.main {
+    display: flex;
+    min-height: 500px;
+    justify-content: space-between;
+    padding: 17em;
+   
+}
+
+.main h2 {
+    position: absolute;
+    top: 35%;
+    line-height: 1.1em;
+    left: 10%;
+    text-align: center;
+    color:#3C7335;
+    font-size: 2.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.main p {
+    position: absolute;
+    color: black;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-align:left;
+    letter-spacing: 1px;
+    width: 45%;
+    top:43%;
+    left: 10%;
+}
+/* styling social contact icons */
+.social_contact {
+    position: absolute;
+    top: 80%;
+    left:20%;
+}
+ 
+.social_contact a i { 
+    
+    font-size: 1.7em;
+    padding-left: 5px;
+    padding-top: 10px;
+    color:#3C7335;
+}
+
+.social_contact a :hover {
+    color: #CDCDCD;   
+}
+/* End styling social contact icons */
+
+/* Styling my photo */
+.myphoto {
+    position: absolute;
+    left: 60%;
+    top: 15%;
+    width: 500px;
+    height:500px;
+    background: url(image/my_photo.jpg) no-repeat;
+    background-size: cover;
+    align-items: center;
+    background-position: center;
+}
+
+
+/*  Stylying of search bar--------------------*/
+
+.search_bar {
+    position: relative;
+    width: 100vw;
+    min-height:20vh ;
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+.search_bar input {
+  position:absolute;
+  
+  left:20%;
+  border: 1px solid black;
+  font-size: 1em;
+  width: 40%;
+  height: 50px;
+  padding-left: 1%;
+  border-radius: 2px 0 0 2px;
+  
+}
+
+.search_bar a i {
+    position: absolute;
+    left: 10%;
+    color:green;
+}
+
+
+/* ----- */
+
+.search_bar button {
+    position: absolute; 
+    left: 60%;
+    width:160px;
+    height: 50px;
+    background-color: #3C7335;
+    color: white;
+    border:1px solid #d3d3d3;
+    cursor: pointer;
+    font-size: 1.1em;
+    border-radius: 0 2px 2px 0;
+ 
+}
+
+.search_bar button:hover {
+    background-color: #45a049;
+  }
+/*---------  */
+/* End of search bar styling --------*/
+
+/* the begning of styling of six Education cards section */
+
+.titles {
+    display: flex;
+    justify-content: center;
+    color: #000207;
+    font-size: 2em;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.content {  /* styling the div which contains the Two cards */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgb(250, 250, 250);
+    min-height: 14em;
+    width: 18em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+
+.card:hover {
+   transform: scale(1.1);
+}
+
+.card:hover .project-image {
+    opacity: 0.8;
+ }
+
+.card-image img{
+    width: 100%
+}
+
+.card-info {
+    padding: 8px;
+}
+
+.card-category {
+    font-size: 0.8em;
+    color: #000;
+}
+
+.year {
+    display: flex;
+    color:red;
+    justify-content: space-between;
+    font-weight: 400;
+    margin-top: 2px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #3a6cf4;
+    font-size: 0.7em;
+    margin-top: 5px;
+}
+
+.more-details:hover {
+    color: #601cfc;
+}
+/* End of books cards styling-------------*/
+
+
+/* The begining of styling "contact part" */
+
+.certificates {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+table {
+    position: absolute;
+    padding-left: 20%;
+    width: 70%;  
+}
+
+table tr {
+    height: 80px
+}
+table tr th {
+    text-align: center;
+    background-color: #3C7335;
+    height: 50px;
+    color: white;
+}
+
+table tr td {
+    padding-left: 25px;
+}
+
+/* End of styling "Certificate section" ------------*/
+
+/* The begning of styling "footer" ------------*/
+footer {
+    position: relative;
+    background-color: #3C7335;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    height: 25vh;
+    width: 100vw;
+    padding: 2%;
+}
+
+.footer_content p {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.social_contact_bottom {
+    position: absolute;
+    font-size: 1.2em;
+    font-weight: 500;
+    left:50%;
+}
+
+.social_contact_bottom a i {
+    font-size: 1.8em;
+    font-weight: 500;
+    padding: 5%;
+}
+
+.social_contact_bottom a {
+    color:#FFFFFF;
+    padding-left: 10px;
+    
+}
+
+.social_contact_bottom a:hover {
+    color: #CDCDCD;   
+}
+ 
+.footer_content {
+    position: absolute;
+}
+.footer_content ul {
+    padding-left: 25px;
+    font-size: 0.9em;
+    font-weight: 500;
+   
+}
+.footer_content ul a {
+    color:#FFFFFF;
+    text-decoration: none;
+}
+.footer_content ul a:hover {
+    color: #CDCDCD;   
+}
+ 
+.footer_content a i { 
+    
+    font-size: 1.7em;
+    padding-left: 5px;
+    padding-top: 10px;
+    color: white;
+}
+
+.footer-title {
+    font-size: 1.1em;
+    font-weight: 400;
+    padding-top: 20px;
+    align-content: center;
+}
+
+.copyright {
+   position: absolute;
+   left: 70%;
+}
+/* End of styling footer ----------*/
+
+
+/*  ---------------- */
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+    .logo{
+        font-weight: 300;
+        font-size: 1em; 
+        padding: 2px;
+        margin-left: 1px;
+        text-align: center;
+        
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main-content h2{
+        font-size: 0.5em;
+    }
+
+    .main-content h3{
+        font-size: 0.4em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-card {
+        width: 500px;
+        width: 400px;
+        float: none;
+        display:none;
+        text-align: left;
+       
+    } 
+    .contact-card input {  /* styling the input text */
+        margin:1px;
+        padding-left: 1px;
+        width: 200px;
+        height: 40px;
+        font-size: 0.9em;
+    }
+    
+    .contact-card select {  /* styling the select */
+        margin:1px;
+        padding-left: 1px;
+        width: 200px;
+        height: 40px;
+        font-size: 0.9em;
+    }
+    
+    .contact-card label {   /* styling the lable */
+         font-size: 0.9em;
+         margin-right: 5px;
+    }
+    
+    .contact-card textarea {   /*styling the textarea */
+        margin: 1px;
+        width: 200px;
+    }
+
+    .contact-card textarea p {
+        font-size: 0.9em;
+    }  
+    .contact-section {
+        width: 200px;
+        margin-left: 1%;
+    }
+      
+      
+
+}
+
+@media (max-width:600px){
+    header {
+        width: 30%;
+    }
+    body{
+        font-size: 12px;
+    }
+
+    .main-pic h2{
+        font-size: 0.3em;
+    }
+
+    .main-pic h3{
+        font-size: 0.9em;
+    }
+
+    .search_bar {
+        float: none;
+        width: 20%;
+    }
+
+    .contact-card {
+        max-height: 500px;
+        max-width: 400px;
+        float: none;
+        display:none;
+        text-align: left;
+       
+    } 
+
+    .contact-card input {  
+        margin:1px;
+        padding-left: 1px;
+        width: 200px;
+        height: 40px;
+        font-size: 0.9em;
+    }
+    
+    .contact-card select { 
+        margin:1px;
+        padding-left: 1px;
+        width: 200px;
+        height: 40px;
+        font-size: 0.9em;
+    }
+    
+    .contact-card label {   
+         font-size: 0.9em;
+         margin-right: 5px;
+    }
+    
+    .contact-card textarea {  
+        margin: 1px;
+        width: 200px;
+    }
+
+    .contact-card textarea p {
+        font-size: 0.9em;
+    }  
+    .contact-section {
+        width: 200px;
+        margin-left: 1%;
+    }
+      
+    Footer {
+        width: 30%;
+    }
+
+    
+}
+
+
+
+
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+     
+    }
+
+    .search_bar {
+        float: none;
+        width: 10%;
+    }
+}
+  
